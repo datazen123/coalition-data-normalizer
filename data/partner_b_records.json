@@ -1,0 +1,9 @@
+[
+  { "vehicleId": "B-0091", "assetType": "cargoTruck", "serialNo": "TAC-771102-A", "lastServiceDate": "2026.06.13", "usageHours": 1428, "fuelCapacityL": 227, "status": "READY", "locationNote": "Motor Pool Area 3", "notes": "" },
+  { "vehicleId": "B-0114", "assetType": "generatorSet60kW", "serialNo": "GEN-330415-B", "lastServiceDate": "2026.05.03", "usageHours": 3112, "fuelCapacityL": 170, "status": "PARTIAL", "locationNote": "Power Yard Bay 2", "notes": "voltage fluctuation under load" },
+  { "vehicleId": "B-0037", "assetType": "utilityVehicle", "serialNo": "UTV-902214-C", "lastServiceDate": "2026.06.29", "usageHours": 985, "fuelCapacityL": 95, "status": "READY", "locationNote": "Motor Pool Area 1", "notes": "" },
+  { "vehicleId": "B-0202", "assetType": "waterTrailer", "serialNo": "WTR-118825-D", "lastServiceDate": "2026.04.16", "usageHours": 212, "fuelCapacityL": 0, "status": "NOT-MISSION-CAPABLE", "locationNote": "Motor Pool Area 3", "notes": "axle seal leak, parts on order" },
+  { "vehicleId": "B-0058", "assetType": "forklift", "serialNo": "FLT-556093-E", "lastServiceDate": "2026.06.21", "usageHours": 642, "fuelCapacityL": 57, "status": "MAINTENANCE-SCHEDULED", "locationNote": "Warehouse 4 Dock", "notes": "routine 600-hour service scheduled, not yet performed" },
+  { "vehicleId": "B-0129", "assetType": "commsTrailer", "serialNo": "CMT-204471-F", "lastServiceDate": "2026.05.31", "usageHours": 508, "fuelCapacityL": 76, "status": "PARTIAL", "locationNote": "Signal Yard", "notes": "backup antenna mount damaged, primary unaffected" },
+  { "vehicleId": "B-0303", "assetType": "lightTower", "serialNo": "LGT-671290-G", "lastServiceDate": "2026.06.25", "usageHours": 340, "fuelCapacityL": 40, "status": "READY", "locationNote": "Warehouse 4 Dock", "notes": "" }
+]

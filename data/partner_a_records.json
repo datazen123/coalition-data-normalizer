@@ -1,0 +1,8 @@
+[
+  { "vehicle_id": "A-CT-01", "asset_type": "cargo_truck", "serial_number": "TAC-771102-A", "last_service_date": "06/12/2026", "usage_hours": 1420, "fuel_capacity_gal": 60, "status": "OPERATIONAL", "location_note": "Motor pool lot 3", "notes": "" },
+  { "vehicle_id": "A-GEN-04", "asset_type": "generator_60kw", "serial_number": "GEN-330451-B", "last_service_date": "05/02/2026", "usage_hours": 3110, "fuel_capacity_gal": 45, "status": "LIMITED", "location_note": "Power yard bay 2", "notes": "intermittent voltage fluctuation reported" },
+  { "vehicle_id": "A-UTV-09", "asset_type": "utility_vehicle", "serial_number": "UTV-902214-C", "last_service_date": "06/28/2026", "usage_hours": 980, "fuel_capacity_gal": 25, "status": "OPERATIONAL", "location_note": "Motor pool lot 1", "notes": "" },
+  { "vehicle_id": "A-WTR-02", "asset_type": "water_trailer", "serial_number": "WTR-118825-D", "last_service_date": "04/15/2026", "usage_hours": 210, "fuel_capacity_gal": 0, "status": "DOWN", "location_note": "Motor pool lot 3", "notes": "axle seal leak, awaiting parts" },
+  { "vehicle_id": "A-FLT-06", "asset_type": "forklift", "serial_number": "FLT-556093-E", "last_service_date": "06/20/2026", "usage_hours": 640, "fuel_capacity_gal": 15, "status": "OPERATIONAL", "location_note": "Warehouse 4 dock", "notes": "" },
+  { "vehicle_id": "A-CMT-03", "asset_type": "comms_trailer", "serial_number": "CMT-204471-F", "last_service_date": "05/30/2026", "usage_hours": 505, "fuel_capacity_gal": 20, "status": "LIMITED", "location_note": "Signal yard", "notes": "backup antenna mount damaged" }
+]
