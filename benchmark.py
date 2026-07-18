@@ -45,7 +45,10 @@ RANDOM_SEED = 42
 
 
 def extract_json(text: str) -> dict:
-    return json.loads(CODE_FENCE_RE.sub("", text.strip()).strip())
+    try:
+        return json.loads(CODE_FENCE_RE.sub("", text.strip()).strip())
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"Claude's response wasn't valid JSON: {exc}\nRaw response:\n{text}") from exc
 
 
 def clean(val) -> str:

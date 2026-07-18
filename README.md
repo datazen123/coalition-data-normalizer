@@ -112,4 +112,29 @@ includes an `AskSageClient` built from Ask Sage's
 [public API docs](https://github.com/Ask-Sage/AskSage-Open-Source-Community),
 untested pending an account).
 
+## Tests + CI
+
+`test_normalize.py` and `test_benchmark.py` cover every deterministic
+function (date-format parsing for both partner conventions, the
+liters-to-gallons conversion math, the Partner A/B field reformatting,
+JSON-fence stripping) - no API key or network needed, safe for CI on
+every push:
+
+```bash
+pip install -r requirements-dev.txt
+pytest -q
+```
+
+## Security notes
+
+- API keys are read from environment variables only, never hardcoded;
+  `.env` is gitignored, `.env.example` ships placeholders only.
+- Checked (2026-07-18): this repository's full git history contains zero
+  occurrences of any real API key.
+- Network calls to the Ask Sage gateway have explicit 30s timeouts.
+- A malformed/non-JSON model response now raises a clear, actionable
+  error (with the raw response attached) instead of an opaque traceback.
+- Dependencies are version-pinned with an upper bound
+  (`>=X,<NEXT_MAJOR`), not left open-ended.
+
 Built with [Claude Code](https://claude.com/claude-code).
