@@ -68,6 +68,40 @@ export $(grep -v '^#' .env | xargs)
 python normalize.py
 ```
 
+## Real-data benchmark
+
+`normalize.py` above is an illustrative demo over ~13 hand-written equipment
+records - useful for showing the architecture, but small enough that a
+strong result isn't yet a measurement. `benchmark.py` is a separate,
+additive scenario that measures the same reconciliation approach against
+the **Febrl 4 record-linkage benchmark** (Christen, ANU), loaded via the
+[`recordlinkage`](https://recordlinkage.readthedocs.io/) Python package.
+Febrl 4 is a structural fit for this repo specifically: it's already split
+into two 5,000-record tables with known 1:1 ground truth - i.e. already
+shaped like "two partners, no shared key" before any reformatting.
+
+Febrl is person-identity data (name/address/date-of-birth), not equipment
+records - this isn't a replacement for the demo above, it's proof the
+reconciliation *architecture* generalizes to a second, real domain
+(personnel/roster reconciliation - a genuine coalition-interoperability need
+in its own right), reformatted into the same Partner A / Partner B
+field-naming and date-convention split as the equipment scenario, with 5
+deliberately-unmatched decoy records per side (same test as the light-tower
+case above - can it correctly say "no match" instead of forcing one).
+
+**Actual measured result** (30 true matches + 5 distractors per side,
+seed=42, full run in `benchmark_report.md`):
+
+| Metric | Result |
+|---|---|
+| Precision | 100.00% (0 false positives) |
+| Recall | 100.00% (0 false negatives) |
+| Unmatched distractors correctly flagged | 10/10 |
+
+```bash
+python benchmark.py
+```
+
 ## Deployment path
 
 This demo calls the Anthropic API directly. A production version for a
