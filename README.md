@@ -20,6 +20,19 @@ C5ISRT Summit (Nov 2025) and KORDEF 2026 (Apr 2026) - both explicitly named
 near-term priority. This is that problem, generic and safe: reconciling two
 allies' incompatible equipment-status records into one canonical view.
 
+**Real contract evidence, honestly scoped**: a direct USASpending.gov
+search found no named ROK/Korea-peninsula-specific data-interoperability
+award. What it did find is real but theater-level, not peninsula-specific:
+Palantir USG holds `FA714624C0030` ($21.2M, Dept. of the Air Force) for the
+**Joint Fires Network (JFN)**, explicitly described as "a critical
+capability for INDOPACOM and its allies and partners... a common
+operational and intelligence picture across services and domains" -
+several related Joint Fires Network task orders to Johns Hopkins APL exist
+too. Place of performance is Virginia (program office), not Korea, so this
+upgrades the evidence from "no award at all" to "a real INDOPACOM-wide
+program this pattern fits into," not a confirmed peninsula-specific one -
+stated plainly rather than stretched.
+
 ## What makes the matching non-trivial
 
 - One pair of records has a **transposed-digit typo** in the serial number
